@@ -2,7 +2,7 @@ import collections
 import numpy as np
 from decimal import Decimal
 
-class abstract_base_class():
+class _abstract_base_class():
     def __init__(self, max_simultaneously_bins):
         self.bin_count = 0
         self.bin_size = np.float32("1")
@@ -20,7 +20,7 @@ class abstract_base_class():
     def _convert_float_to_decimal(self, to_convert):
         return Decimal(str(to_convert))
 
-class next_fit(abstract_base_class):
+class NextFit(_abstract_base_class):
     def put(self, x):
         bin_value = Decimal(str(self.bins[0]))
         item_value = self._convert_float_to_decimal(x)
@@ -30,7 +30,7 @@ class next_fit(abstract_base_class):
             self.kick_bin()
             self.bins[0] = np.float32(str(self._convert_float_to_decimal(self.bin_size) - item_value))
 
-class first_fit(abstract_base_class):
+class FirstFit(_abstract_base_class):
     def put(self, x):
         item_value = self._convert_float_to_decimal(x)
         j = 0
@@ -43,7 +43,7 @@ class first_fit(abstract_base_class):
         self.put(x)
         
 
-class best_fit(abstract_base_class):
+class BestFit(_abstract_base_class):
     def put(self, x):
         item_value = self._convert_float_to_decimal(x)
         min = Decimal("1")
@@ -63,12 +63,12 @@ class best_fit(abstract_base_class):
 
 
 if __name__ == "__main__":
-    from item_generator import item_generator
+    from environment import ItemProvider
     max_simultaneously_bins = 3
-    ig = item_generator(test_set=[Decimal('0.2'), Decimal('0.5'), Decimal('0.4'), Decimal('0.7'), Decimal('0.1'), Decimal('0.3'), Decimal('0.8')])
-    next_fit = next_fit(max_simultaneously_bins)
-    first_fit = first_fit(max_simultaneously_bins)
-    best_fit = best_fit(max_simultaneously_bins)
+    ig = ItemProvider(data=[Decimal('0.2'), Decimal('0.5'), Decimal('0.4'), Decimal('0.7'), Decimal('0.1'), Decimal('0.3'), Decimal('0.8')])
+    next_fit = NextFit(max_simultaneously_bins)
+    first_fit = FirstFit(max_simultaneously_bins)
+    best_fit = BestFit(max_simultaneously_bins)
     while ig.has_next():
         item = ig.next()
         print(item)

@@ -1,29 +1,36 @@
 import numpy as np
-import ClassicAlgorithms as ca
-from BinEnvironment import BinEnvironment
-from Agent import Agent
-from Utils import plotLearning
-from Utils import readCsv
-from item_generator import item_generator
+from classic_algorithms import FirstFit
+from classic_algorithms import NextFit
+from classic_algorithms import BestFit
+from environment import BinEnvironment
+from environment import ItemProvider
+from agent import Agent
+from utils import plot_learning
+from utils import read_csv
 
 max_simultaneously_bins = 5
-data = readCsv(file="training_data/micro_gauss.csv")
+data = read_csv(file="training_data/small_double_gauss.csv")
 print(data)
-ig = item_generator(count=len(data), test_set=data)
 
-env = BinEnvironment(max_simultaneously_bins, item_generator=ig)
 agent = Agent(gamma=0.99, epsilon=1.0, batch_size=64, n_actions=4, eps_end=0.01, input_dims=[2], lr=0.001)
 agent.train()
 
+item_provider = ItemProvider(sample_size=100, data=data, randomize=True)
+env = BinEnvironment(max_simultaneously_bins, item_provider=item_provider)
+
 scores, eps_history = [], []
-n_games = 90
+n_games = 100
 
 for i in range(n_games):
     score = 0
     done = False
-    observation = env.reset()
-    if(i == n_games):
+    if(i == n_games-1):
+        data = np.random.choice(data, size=100, replace=False)
+        print(data)
+        item_provider = ItemProvider(sample_size=100, data=data, randomize=True)
+        env = BinEnvironment(max_simultaneously_bins, item_provider=item_provider)
         agent.eval()
+    observation = env.reset()
     while not done:
         action = agent.choose_action(observation)
         observation_, reward, done, info = env.step(action)
@@ -37,12 +44,12 @@ for i in range(n_games):
     print('epoch ', i, 'score %.2f' % score, 'average score %.2f' % avg_score, 'epsilon %.2f' % agent.epsilon, 'bin count %i' % env.bin_count)
 
 
-next_fit = ca.next_fit(max_simultaneously_bins)
-first_fit = ca.first_fit(max_simultaneously_bins)
-best_fit = ca.best_fit(max_simultaneously_bins)
-ig.reset()
-while ig.has_next():
-    item = ig.next()
+next_fit = NextFit(max_simultaneously_bins)
+first_fit = FirstFit(max_simultaneously_bins)
+best_fit = BestFit(max_simultaneously_bins)
+item_provider.reset()
+while item_provider.has_next():
+    item = item_provider.next()
     next_fit.put(item)
     first_fit.put(item)
     best_fit.put(item)
@@ -53,5 +60,5 @@ print('Best fit:    ', best_fit.get_bin_count())
 print('Learned fit: ', env.bin_count)
 
 x = [i+1 for i in range(n_games)]
-plotLearning(x, scores, eps_history, 'plot.png')
+plot_learning(x, scores, eps_history, 'plot.png')
 
