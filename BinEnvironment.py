@@ -26,31 +26,28 @@ class BinEnvironment():
         self.bin_count += 1
 
     def step(self, action):
-        reward = -1
-        terminal = not self.item_generator.has_next()
+        reward = 0
+        terminal = False
         chosen_action = self.available_actions[action]
         if chosen_action == 'P':
             bin_value = Decimal(str(self.bins[self.agent_position]))
             item_value = Decimal(str(self.item))
             if bin_value - item_value >= 0:
                 self.bins[self.agent_position] = np.float32(str(bin_value - item_value))
+                terminal = not self.item_generator.has_next()
                 if not terminal:
                     self.item = self.item_generator.next()
-                else:
-                    reward = 100000
         elif chosen_action == 'K':
             self.kick_bin()
-            reward = -10
+            reward = -1
         else:
             new_position = self.agent_position + self.action_space[chosen_action]
             if new_position >= 0 and new_position < self.max_simultaneously_bins:
                 self.agent_position = new_position
-                reward = 0
         return [self.agent_position, self.item], reward, terminal, None
 
     def render(self):
         print('------------------')
         print(self.bins)
-        print("*".rjust(self.agent_position*2+2, ' '))
         print('------------------')
 

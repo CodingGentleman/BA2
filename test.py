@@ -11,11 +11,14 @@ def play():
     env = BinEnvironment(max_simultaneously_bins)
     print('Moves: 0(Left), 1(Right), 2(Kick), 3(Put)')
     done = False
+    print(env.reset())
+    score = 0
     while not done:
-        # print(env.render())
+        env.render()
         observation_, reward, done, info = env.step(int(input()))
         print(observation_, reward)
-        
+        score += reward
+    print('final score %i' % score)
 
 def test_csv():
     results = np.array([])
@@ -43,4 +46,4 @@ def get_truncated_normal(mean=0, standard_defiation=1, lower_limit=0, upper_limi
     return truncnorm((lower_limit - mean) / standard_defiation, (upper_limit - mean) / standard_defiation, loc=mean, scale=standard_defiation)
 
 if __name__ == "__main__":
-    generate_testdata()
+    play()

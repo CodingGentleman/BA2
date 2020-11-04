@@ -24,7 +24,6 @@ class item_generator():
             return result
         if self.has_next():
             self.count -= 1
-            print('count: %i' % self.count)
             return random.choices(self.numbers, weights=self.weights, k=1)[0]
         raise ValueError('No more items')
 
