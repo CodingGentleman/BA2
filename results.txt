@@ -1,0 +1,412 @@
+PS C:\Users\Kevin\Google Drive\FH\BAC\2> & C:/Users/Kevin/AppData/Local/Programs/Python/Python38/python.exe "c:/Users/Kevin/Google Drive/FH/BAC/2/impl/main.py"
+reading file  training_data/small_double_gauss.csv
+[0.2  0.24 0.31 ... 0.74 0.75 0.75]
+--- saving checkpoint ---
+epoch  0 score -163.00 average score -163.00 epsilon 0.99 bin count 163
+epoch  1 score -136.00 average score -149.50 epsilon 0.98 bin count 136
+epoch  2 score -152.00 average score -150.33 epsilon 0.96 bin count 152
+epoch  3 score -198.00 average score -162.25 epsilon 0.95 bin count 198
+epoch  4 score -139.00 average score -157.60 epsilon 0.94 bin count 139
+--- saving checkpoint ---
+epoch  5 score -151.00 average score -156.50 epsilon 0.93 bin count 151
+epoch  6 score -151.00 average score -155.71 epsilon 0.91 bin count 151
+epoch  7 score -191.00 average score -160.12 epsilon 0.90 bin count 191
+epoch  8 score -149.00 average score -158.89 epsilon 0.88 bin count 149
+epoch  9 score -141.00 average score -157.10 epsilon 0.87 bin count 141
+--- saving checkpoint ---
+epoch  10 score -148.00 average score -156.27 epsilon 0.86 bin count 148
+epoch  11 score -131.00 average score -154.17 epsilon 0.85 bin count 131
+epoch  12 score -150.00 average score -153.85 epsilon 0.83 bin count 150
+epoch  13 score -165.00 average score -154.64 epsilon 0.82 bin count 165
+epoch  14 score -134.00 average score -153.27 epsilon 0.80 bin count 134
+--- saving checkpoint ---
+epoch  15 score -156.00 average score -153.44 epsilon 0.79 bin count 156
+epoch  16 score -160.00 average score -153.82 epsilon 0.77 bin count 160
+epoch  17 score -144.00 average score -153.28 epsilon 0.76 bin count 144
+epoch  18 score -121.00 average score -151.58 epsilon 0.74 bin count 121
+epoch  19 score -138.00 average score -150.90 epsilon 0.73 bin count 138
+--- saving checkpoint ---
+epoch  20 score -127.00 average score -149.76 epsilon 0.71 bin count 127
+epoch  21 score -152.00 average score -149.86 epsilon 0.70 bin count 152
+epoch  22 score -151.00 average score -149.91 epsilon 0.68 bin count 151
+epoch  23 score -118.00 average score -148.58 epsilon 0.67 bin count 118
+epoch  24 score -138.00 average score -148.16 epsilon 0.65 bin count 138
+--- saving checkpoint ---
+epoch  25 score -135.00 average score -147.65 epsilon 0.64 bin count 135
+epoch  26 score -118.00 average score -146.56 epsilon 0.62 bin count 118
+epoch  27 score -114.00 average score -145.39 epsilon 0.61 bin count 114
+epoch  28 score -127.00 average score -144.76 epsilon 0.59 bin count 127
+epoch  29 score -103.00 average score -143.37 epsilon 0.57 bin count 103
+--- saving checkpoint ---
+epoch  30 score -104.00 average score -142.10 epsilon 0.56 bin count 104
+epoch  31 score -113.00 average score -141.19 epsilon 0.54 bin count 113
+epoch  32 score -107.00 average score -140.15 epsilon 0.52 bin count 107
+epoch  33 score -97.00 average score -138.88 epsilon 0.51 bin count 97
+epoch  34 score -118.00 average score -138.29 epsilon 0.49 bin count 118
+--- saving checkpoint ---
+epoch  35 score -96.00 average score -137.11 epsilon 0.47 bin count 96
+epoch  36 score -114.00 average score -136.49 epsilon 0.46 bin count 114
+epoch  37 score -99.00 average score -135.50 epsilon 0.44 bin count 99
+epoch  38 score -104.00 average score -134.69 epsilon 0.42 bin count 104
+epoch  39 score -93.00 average score -133.65 epsilon 0.40 bin count 93
+--- saving checkpoint ---
+epoch  40 score -118.00 average score -133.27 epsilon 0.37 bin count 118
+epoch  41 score -92.00 average score -132.29 epsilon 0.35 bin count 92
+epoch  42 score -111.00 average score -131.79 epsilon 0.32 bin count 111
+epoch  43 score -112.00 average score -131.34 epsilon 0.29 bin count 112
+epoch  44 score -120.00 average score -131.09 epsilon 0.25 bin count 120
+--- saving checkpoint ---
+epoch  45 score -125.00 average score -130.96 epsilon 0.21 bin count 125
+epoch  46 score -111.00 average score -130.53 epsilon 0.17 bin count 111
+epoch  47 score -151.00 average score -130.96 epsilon 0.08 bin count 151
+epoch  48 score -107.00 average score -130.47 epsilon 0.01 bin count 107
+epoch  49 score -106.00 average score -129.98 epsilon 0.01 bin count 106
+--- saving checkpoint ---
+epoch  50 score -137.00 average score -130.12 epsilon 0.01 bin count 137
+epoch  51 score -114.00 average score -129.81 epsilon 0.01 bin count 114
+epoch  52 score -112.00 average score -129.47 epsilon 0.01 bin count 112
+epoch  53 score -109.00 average score -129.09 epsilon 0.01 bin count 109
+epoch  54 score -158.00 average score -129.62 epsilon 0.01 bin count 158
+--- saving checkpoint ---
+epoch  55 score -115.00 average score -129.36 epsilon 0.01 bin count 115
+epoch  56 score -112.00 average score -129.05 epsilon 0.01 bin count 112
+epoch  57 score -125.00 average score -128.98 epsilon 0.01 bin count 125
+epoch  58 score -91.00 average score -128.34 epsilon 0.01 bin count 91
+epoch  59 score -95.00 average score -127.78 epsilon 0.01 bin count 95
+--- saving checkpoint ---
+epoch  60 score -108.00 average score -127.46 epsilon 0.01 bin count 108
+epoch  61 score -104.00 average score -127.08 epsilon 0.01 bin count 104
+epoch  62 score -108.00 average score -126.78 epsilon 0.01 bin count 108
+epoch  63 score -112.00 average score -126.55 epsilon 0.01 bin count 112
+epoch  64 score -186.00 average score -127.46 epsilon 0.01 bin count 186
+--- saving checkpoint ---
+epoch  65 score -117.00 average score -127.30 epsilon 0.01 bin count 117
+epoch  66 score -100.00 average score -126.90 epsilon 0.01 bin count 100
+epoch  67 score -87.00 average score -126.31 epsilon 0.01 bin count 87
+epoch  68 score -143.00 average score -126.55 epsilon 0.01 bin count 143
+epoch  69 score -145.00 average score -126.81 epsilon 0.01 bin count 145
+--- saving checkpoint ---
+epoch  70 score -116.00 average score -126.66 epsilon 0.01 bin count 116
+epoch  71 score -110.00 average score -126.43 epsilon 0.01 bin count 110
+epoch  72 score -91.00 average score -125.95 epsilon 0.01 bin count 91
+epoch  73 score -99.00 average score -125.58 epsilon 0.01 bin count 99
+epoch  74 score -115.00 average score -125.44 epsilon 0.01 bin count 115
+--- saving checkpoint ---
+epoch  75 score -162.00 average score -125.92 epsilon 0.01 bin count 162
+epoch  76 score -107.00 average score -125.68 epsilon 0.01 bin count 107
+epoch  77 score -105.00 average score -125.41 epsilon 0.01 bin count 105
+epoch  78 score -92.00 average score -124.99 epsilon 0.01 bin count 92
+epoch  79 score -97.00 average score -124.64 epsilon 0.01 bin count 97
+--- saving checkpoint ---
+epoch  80 score -143.00 average score -124.86 epsilon 0.01 bin count 143
+epoch  81 score -90.00 average score -124.44 epsilon 0.01 bin count 90
+epoch  82 score -89.00 average score -124.01 epsilon 0.01 bin count 89
+epoch  83 score -95.00 average score -123.67 epsilon 0.01 bin count 95
+epoch  84 score -119.00 average score -123.61 epsilon 0.01 bin count 119
+--- saving checkpoint ---
+epoch  85 score -87.00 average score -123.19 epsilon 0.01 bin count 87
+epoch  86 score -119.00 average score -123.14 epsilon 0.01 bin count 119
+epoch  87 score -120.00 average score -123.10 epsilon 0.01 bin count 120
+epoch  88 score -121.00 average score -123.08 epsilon 0.01 bin count 121
+epoch  89 score -105.00 average score -122.88 epsilon 0.01 bin count 105
+--- saving checkpoint ---
+epoch  90 score -89.00 average score -122.51 epsilon 0.01 bin count 89
+epoch  91 score -107.00 average score -122.34 epsilon 0.01 bin count 107
+epoch  92 score -113.00 average score -122.24 epsilon 0.01 bin count 113
+epoch  93 score -105.00 average score -122.05 epsilon 0.01 bin count 105
+epoch  94 score -75.00 average score -121.56 epsilon 0.01 bin count 75
+--- saving checkpoint ---
+epoch  95 score -95.00 average score -121.28 epsilon 0.01 bin count 95
+epoch  97 score -110.00 average score -120.93 epsilon 0.01 bin count 110
+epoch  98 score -140.00 average score -121.12 epsilon 0.01 bin count 140
+[0.76 0.13 0.26 0.23 0.31 0.7  0.8  0.67 0.77 0.23 0.77 0.62 0.27 0.81
+ 0.21 0.22 0.11 0.76 0.85 0.74 0.22 0.23 0.24 0.27 0.68 0.81 0.8  0.23
+ 0.82 0.25 0.79 0.79 0.29 0.29 0.79 0.7  0.3  0.25 0.75 0.71 0.78 0.22
+ 0.71 0.72 0.73 0.75 0.17 0.69 0.81 0.26 0.2  0.72 0.21 0.14 0.71 0.77
+ 0.2  0.23 0.78 0.73 0.24 0.83 0.76 0.19 0.74 0.18 0.26 0.78 0.78 0.8
+ 0.34 0.77 0.81 0.77 0.24 0.18 0.27 0.71 0.21 0.81 0.71 0.69 0.71 0.22
+ 0.32 0.78 0.18 0.73 0.24 0.3  0.72 0.18 0.81 0.8  0.25 0.28 0.26 0.26
+ 0.19 0.72]
+Next fit:     65
+First fit:    50
+Best fit:     48
+Learned fit:  129
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+PS C:\Users\Kevin\Google Drive\FH\BAC\2> & C:/Users/Kevin/AppData/Local/Programs/Python/Python38/python.exe "c:/Users/Kevin/Google Drive/FH/BAC/2/impl/main.py"
+reading file  training_data/small_gauss.csv
+[0.43 0.53 0.58 ... 0.53 0.44 0.49]
+--- saving checkpoint ---
+epoch  0 score -163.00 average score -163.00 epsilon 0.99 bin count 163
+epoch  1 score -147.00 average score -155.00 epsilon 0.98 bin count 147
+epoch  2 score -139.00 average score -149.67 epsilon 0.97 bin count 139
+epoch  3 score -140.00 average score -147.25 epsilon 0.95 bin count 140
+epoch  4 score -148.00 average score -147.40 epsilon 0.94 bin count 148
+--- saving checkpoint ---
+epoch  5 score -150.00 average score -147.83 epsilon 0.93 bin count 150
+epoch  6 score -149.00 average score -148.00 epsilon 0.92 bin count 149
+epoch  7 score -159.00 average score -149.38 epsilon 0.90 bin count 159
+epoch  8 score -158.00 average score -150.33 epsilon 0.89 bin count 158
+epoch  9 score -129.00 average score -148.20 epsilon 0.87 bin count 129
+--- saving checkpoint ---
+epoch  10 score -122.00 average score -145.82 epsilon 0.86 bin count 122
+epoch  11 score -144.00 average score -145.67 epsilon 0.85 bin count 144
+epoch  12 score -135.00 average score -144.85 epsilon 0.84 bin count 135
+epoch  13 score -121.00 average score -143.14 epsilon 0.82 bin count 121
+epoch  14 score -138.00 average score -142.80 epsilon 0.81 bin count 138
+--- saving checkpoint ---
+epoch  15 score -131.00 average score -142.06 epsilon 0.80 bin count 131
+epoch  16 score -115.00 average score -140.47 epsilon 0.79 bin count 115
+epoch  17 score -145.00 average score -140.72 epsilon 0.77 bin count 145
+epoch  18 score -116.00 average score -139.42 epsilon 0.76 bin count 116
+epoch  19 score -115.00 average score -138.20 epsilon 0.75 bin count 115
+--- saving checkpoint ---
+epoch  20 score -125.00 average score -137.57 epsilon 0.73 bin count 125
+epoch  21 score -116.00 average score -136.59 epsilon 0.72 bin count 116
+epoch  22 score -124.00 average score -136.04 epsilon 0.71 bin count 124
+epoch  23 score -106.00 average score -134.79 epsilon 0.69 bin count 106
+epoch  24 score -115.00 average score -134.00 epsilon 0.68 bin count 115
+--- saving checkpoint ---
+epoch  25 score -119.00 average score -133.42 epsilon 0.66 bin count 119
+epoch  26 score -116.00 average score -132.78 epsilon 0.65 bin count 116
+epoch  27 score -104.00 average score -131.75 epsilon 0.64 bin count 104
+epoch  28 score -102.00 average score -130.72 epsilon 0.62 bin count 102
+epoch  29 score -109.00 average score -130.00 epsilon 0.61 bin count 109
+--- saving checkpoint ---
+epoch  30 score -124.00 average score -129.81 epsilon 0.59 bin count 124
+epoch  31 score -105.00 average score -129.03 epsilon 0.58 bin count 105
+epoch  32 score -105.00 average score -128.30 epsilon 0.56 bin count 105
+epoch  33 score -102.00 average score -127.53 epsilon 0.55 bin count 102
+epoch  34 score -94.00 average score -126.57 epsilon 0.53 bin count 94
+--- saving checkpoint ---
+epoch  35 score -107.00 average score -126.03 epsilon 0.52 bin count 107
+epoch  36 score -92.00 average score -125.11 epsilon 0.51 bin count 92
+epoch  37 score -94.00 average score -124.29 epsilon 0.49 bin count 94
+epoch  38 score -92.00 average score -123.46 epsilon 0.47 bin count 92
+epoch  39 score -92.00 average score -122.67 epsilon 0.46 bin count 92
+--- saving checkpoint ---
+epoch  40 score -89.00 average score -121.85 epsilon 0.44 bin count 89
+epoch  41 score -70.00 average score -120.62 epsilon 0.43 bin count 70
+epoch  42 score -104.00 average score -120.23 epsilon 0.41 bin count 104
+epoch  43 score -97.00 average score -119.70 epsilon 0.39 bin count 97
+epoch  44 score -75.00 average score -118.71 epsilon 0.38 bin count 75
+--- saving checkpoint ---
+epoch  45 score -93.00 average score -118.15 epsilon 0.36 bin count 93
+epoch  46 score -83.00 average score -117.40 epsilon 0.34 bin count 83
+epoch  47 score -84.00 average score -116.71 epsilon 0.32 bin count 84
+epoch  48 score -91.00 average score -116.18 epsilon 0.30 bin count 91
+epoch  49 score -87.00 average score -115.60 epsilon 0.27 bin count 87
+--- saving checkpoint ---
+epoch  50 score -88.00 average score -115.06 epsilon 0.25 bin count 88
+epoch  51 score -79.00 average score -114.37 epsilon 0.22 bin count 79
+epoch  52 score -74.00 average score -113.60 epsilon 0.19 bin count 74
+epoch  53 score -71.00 average score -112.81 epsilon 0.14 bin count 71
+epoch  54 score -70.00 average score -112.04 epsilon 0.09 bin count 70
+--- saving checkpoint ---
+epoch  55 score -69.00 average score -111.27 epsilon 0.01 bin count 69
+epoch  56 score -62.00 average score -110.40 epsilon 0.01 bin count 62
+epoch  57 score -61.00 average score -109.55 epsilon 0.01 bin count 61
+epoch  58 score -93.00 average score -109.27 epsilon 0.01 bin count 93
+epoch  59 score -129.00 average score -109.60 epsilon 0.01 bin count 129
+--- saving checkpoint ---
+epoch  60 score -82.00 average score -109.15 epsilon 0.01 bin count 82
+epoch  61 score -73.00 average score -108.56 epsilon 0.01 bin count 73
+epoch  62 score -76.00 average score -108.05 epsilon 0.01 bin count 76
+epoch  63 score -72.00 average score -107.48 epsilon 0.01 bin count 72
+epoch  64 score -153.00 average score -108.18 epsilon 0.01 bin count 153
+--- saving checkpoint ---
+epoch  65 score -109.00 average score -108.20 epsilon 0.01 bin count 109
+epoch  66 score -69.00 average score -107.61 epsilon 0.01 bin count 69
+epoch  67 score -66.00 average score -107.00 epsilon 0.01 bin count 66
+epoch  68 score -66.00 average score -106.41 epsilon 0.01 bin count 66
+epoch  69 score -69.00 average score -105.87 epsilon 0.01 bin count 69
+--- saving checkpoint ---
+epoch  70 score -144.00 average score -106.41 epsilon 0.01 bin count 144
+epoch  71 score -153.00 average score -107.06 epsilon 0.01 bin count 153
+epoch  72 score -64.00 average score -106.47 epsilon 0.01 bin count 64
+epoch  73 score -67.00 average score -105.93 epsilon 0.01 bin count 67
+epoch  74 score -72.00 average score -105.48 epsilon 0.01 bin count 72
+--- saving checkpoint ---
+epoch  75 score -73.00 average score -105.05 epsilon 0.01 bin count 73
+epoch  76 score -192.00 average score -106.18 epsilon 0.01 bin count 192
+epoch  77 score -168.00 average score -106.97 epsilon 0.01 bin count 168
+epoch  78 score -170.00 average score -107.77 epsilon 0.01 bin count 170
+epoch  79 score -147.00 average score -108.26 epsilon 0.01 bin count 147
+--- saving checkpoint ---
+epoch  80 score -69.00 average score -107.78 epsilon 0.01 bin count 69
+epoch  81 score -68.00 average score -107.29 epsilon 0.01 bin count 68
+epoch  82 score -71.00 average score -106.86 epsilon 0.01 bin count 71
+epoch  83 score -115.00 average score -106.95 epsilon 0.01 bin count 115
+epoch  84 score -171.00 average score -107.71 epsilon 0.01 bin count 171
+--- saving checkpoint ---
+epoch  85 score -155.00 average score -108.26 epsilon 0.01 bin count 155
+epoch  86 score -68.00 average score -107.79 epsilon 0.01 bin count 68
+epoch  87 score -68.00 average score -107.34 epsilon 0.01 bin count 68
+epoch  88 score -71.00 average score -106.93 epsilon 0.01 bin count 71
+epoch  89 score -67.00 average score -106.49 epsilon 0.01 bin count 67
+--- saving checkpoint ---
+epoch  90 score -151.00 average score -106.98 epsilon 0.01 bin count 151
+epoch  91 score -135.00 average score -107.28 epsilon 0.01 bin count 135
+epoch  92 score -63.00 average score -106.81 epsilon 0.01 bin count 63
+epoch  93 score -72.00 average score -106.44 epsilon 0.01 bin count 72
+epoch  94 score -64.00 average score -105.99 epsilon 0.01 bin count 64
+--- saving checkpoint ---
+epoch  95 score -141.00 average score -106.35 epsilon 0.01 bin count 141
+epoch  96 score -179.00 average score -107.10 epsilon 0.01 bin count 179
+epoch  97 score -80.00 average score -106.83 epsilon 0.01 bin count 80
+epoch  98 score -64.00 average score -106.39 epsilon 0.01 bin count 64
+[0.57 0.52 0.47 0.45 0.63 0.55 0.54 0.48 0.53 0.42 0.45 0.55 0.5  0.52
+ 0.53 0.47 0.48 0.46 0.57 0.5  0.47 0.49 0.49 0.46 0.43 0.46 0.48 0.47
+ 0.6  0.49 0.46 0.55 0.52 0.62 0.49 0.49 0.52 0.43 0.48 0.52 0.45 0.45
+ 0.48 0.46 0.5  0.53 0.38 0.52 0.4  0.68 0.5  0.47 0.52 0.49 0.53 0.48
+ 0.55 0.53 0.51 0.51 0.49 0.54 0.47 0.52 0.53 0.46 0.55 0.53 0.51 0.53
+ 0.49 0.42 0.48 0.43 0.65 0.49 0.57 0.51 0.55 0.42 0.59 0.51 0.48 0.42
+ 0.46 0.51 0.49 0.5  0.49 0.5  0.48 0.45 0.51 0.55 0.49 0.52 0.46 0.51
+ 0.56 0.6 ]
+epoch  99 score -63.00 average score -105.96 epsilon 0.01 bin count 63
+Next fit:     73
+First fit:    47
+Best fit:     46
+Learned fit:  63
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+reading file  training_data/flat.csv
+[0.02 0.84 0.61 ... 0.85 0.51 0.04]
+--- saving checkpoint ---
+epoch  0 score -171.00 average score -171.00 epsilon 0.99 bin count 171
+epoch  1 score -142.00 average score -156.50 epsilon 0.98 bin count 142
+epoch  2 score -142.00 average score -151.67 epsilon 0.96 bin count 142
+epoch  3 score -152.00 average score -151.75 epsilon 0.95 bin count 152
+epoch  4 score -166.00 average score -154.60 epsilon 0.94 bin count 166
+--- saving checkpoint ---
+epoch  5 score -187.00 average score -160.00 epsilon 0.92 bin count 187
+epoch  6 score -163.00 average score -160.43 epsilon 0.91 bin count 163
+epoch  7 score -160.00 average score -160.38 epsilon 0.89 bin count 160
+epoch  8 score -136.00 average score -157.67 epsilon 0.88 bin count 136
+epoch  9 score -137.00 average score -155.60 epsilon 0.87 bin count 137
+--- saving checkpoint ---
+epoch  10 score -130.00 average score -153.27 epsilon 0.86 bin count 130
+epoch  11 score -138.00 average score -152.00 epsilon 0.84 bin count 138
+epoch  12 score -123.00 average score -149.77 epsilon 0.83 bin count 123
+epoch  13 score -136.00 average score -148.79 epsilon 0.82 bin count 136
+epoch  14 score -128.00 average score -147.40 epsilon 0.81 bin count 128
+--- saving checkpoint ---
+epoch  15 score -139.00 average score -146.88 epsilon 0.79 bin count 139
+epoch  16 score -123.00 average score -145.47 epsilon 0.78 bin count 123
+epoch  17 score -130.00 average score -144.61 epsilon 0.77 bin count 130
+epoch  18 score -142.00 average score -144.47 epsilon 0.75 bin count 142
+epoch  19 score -126.00 average score -143.55 epsilon 0.74 bin count 126
+--- saving checkpoint ---
+epoch  20 score -136.00 average score -143.19 epsilon 0.72 bin count 136
+epoch  21 score -132.00 average score -142.68 epsilon 0.71 bin count 132
+epoch  22 score -136.00 average score -142.39 epsilon 0.69 bin count 136
+epoch  23 score -138.00 average score -142.21 epsilon 0.68 bin count 138
+epoch  24 score -115.00 average score -141.12 epsilon 0.66 bin count 115
+--- saving checkpoint ---
+epoch  25 score -137.00 average score -140.96 epsilon 0.65 bin count 137
+epoch  26 score -148.00 average score -141.22 epsilon 0.63 bin count 148
+epoch  27 score -116.00 average score -140.32 epsilon 0.61 bin count 116
+epoch  28 score -117.00 average score -139.52 epsilon 0.60 bin count 117
+epoch  29 score -122.00 average score -138.93 epsilon 0.58 bin count 122
+--- saving checkpoint ---
+epoch  30 score -120.00 average score -138.32 epsilon 0.57 bin count 120
+epoch  31 score -119.00 average score -137.72 epsilon 0.55 bin count 119
+epoch  32 score -137.00 average score -137.70 epsilon 0.53 bin count 137
+epoch  33 score -124.00 average score -137.29 epsilon 0.51 bin count 124
+epoch  34 score -130.00 average score -137.09 epsilon 0.49 bin count 130
+--- saving checkpoint ---
+epoch  35 score -96.00 average score -135.94 epsilon 0.47 bin count 96
+epoch  36 score -111.00 average score -135.27 epsilon 0.45 bin count 111
+epoch  37 score -103.00 average score -134.42 epsilon 0.43 bin count 103
+epoch  38 score -122.00 average score -134.10 epsilon 0.41 bin count 122
+epoch  39 score -130.00 average score -134.00 epsilon 0.39 bin count 130
+--- saving checkpoint ---
+epoch  40 score -109.00 average score -133.39 epsilon 0.36 bin count 109
+epoch  41 score -116.00 average score -132.98 epsilon 0.34 bin count 116
+epoch  42 score -98.00 average score -132.16 epsilon 0.31 bin count 98
+epoch  43 score -102.00 average score -131.48 epsilon 0.28 bin count 102
+epoch  44 score -105.00 average score -130.89 epsilon 0.26 bin count 105
+--- saving checkpoint ---
+epoch  45 score -92.00 average score -130.04 epsilon 0.22 bin count 92
+epoch  46 score -98.00 average score -129.36 epsilon 0.19 bin count 98
+epoch  47 score -78.00 average score -128.29 epsilon 0.14 bin count 78
+epoch  48 score -92.00 average score -127.55 epsilon 0.08 bin count 92
+epoch  49 score -88.00 average score -126.76 epsilon 0.01 bin count 88
+--- saving checkpoint ---
+epoch  50 score -87.00 average score -125.98 epsilon 0.01 bin count 87
+epoch  51 score -92.00 average score -125.33 epsilon 0.01 bin count 92
+epoch  52 score -100.00 average score -124.85 epsilon 0.01 bin count 100
+epoch  53 score -142.00 average score -125.17 epsilon 0.01 bin count 142
+epoch  54 score -77.00 average score -124.29 epsilon 0.01 bin count 77
+--- saving checkpoint ---
+epoch  55 score -62.00 average score -123.18 epsilon 0.01 bin count 62
+epoch  56 score -79.00 average score -122.40 epsilon 0.01 bin count 79
+epoch  57 score -109.00 average score -122.17 epsilon 0.01 bin count 109
+epoch  58 score -103.00 average score -121.85 epsilon 0.01 bin count 103
+epoch  59 score -91.00 average score -121.33 epsilon 0.01 bin count 91
+--- saving checkpoint ---
+epoch  60 score -61.00 average score -120.34 epsilon 0.01 bin count 61
+epoch  61 score -64.00 average score -119.44 epsilon 0.01 bin count 64
+epoch  62 score -73.00 average score -118.70 epsilon 0.01 bin count 73
+epoch  63 score -89.00 average score -118.23 epsilon 0.01 bin count 89
+epoch  64 score -147.00 average score -118.68 epsilon 0.01 bin count 147
+--- saving checkpoint ---
+epoch  65 score -163.00 average score -119.35 epsilon 0.01 bin count 163
+epoch  66 score -144.00 average score -119.72 epsilon 0.01 bin count 144
+epoch  67 score -75.00 average score -119.06 epsilon 0.01 bin count 75
+epoch  68 score -86.00 average score -118.58 epsilon 0.01 bin count 86
+epoch  69 score -99.00 average score -118.30 epsilon 0.01 bin count 99
+--- saving checkpoint ---
+epoch  70 score -92.00 average score -117.93 epsilon 0.01 bin count 92
+epoch  71 score -101.00 average score -117.69 epsilon 0.01 bin count 101
+epoch  72 score -73.00 average score -117.08 epsilon 0.01 bin count 73
+epoch  73 score -77.00 average score -116.54 epsilon 0.01 bin count 77
+epoch  74 score -98.00 average score -116.29 epsilon 0.01 bin count 98
+--- saving checkpoint ---
+epoch  75 score -163.00 average score -116.91 epsilon 0.01 bin count 163
+epoch  76 score -95.00 average score -116.62 epsilon 0.01 bin count 95
+epoch  77 score -102.00 average score -116.44 epsilon 0.01 bin count 102
+epoch  78 score -88.00 average score -116.08 epsilon 0.01 bin count 88
+epoch  79 score -148.00 average score -116.47 epsilon 0.01 bin count 148
+--- saving checkpoint ---
+epoch  80 score -132.00 average score -116.67 epsilon 0.01 bin count 132
+epoch  81 score -69.00 average score -116.09 epsilon 0.01 bin count 69
+epoch  82 score -77.00 average score -115.61 epsilon 0.01 bin count 77
+epoch  83 score -75.00 average score -115.13 epsilon 0.01 bin count 75
+epoch  84 score -137.00 average score -115.39 epsilon 0.01 bin count 137
+--- saving checkpoint ---
+epoch  85 score -155.00 average score -115.85 epsilon 0.01 bin count 155
+epoch  86 score -93.00 average score -115.59 epsilon 0.01 bin count 93
+epoch  87 score -90.00 average score -115.30 epsilon 0.01 bin count 90
+epoch  88 score -75.00 average score -114.84 epsilon 0.01 bin count 75
+epoch  89 score -77.00 average score -114.42 epsilon 0.01 bin count 77
+--- saving checkpoint ---
+epoch  90 score -89.00 average score -114.14 epsilon 0.01 bin count 89
+epoch  91 score -144.00 average score -114.47 epsilon 0.01 bin count 144
+epoch  92 score -141.00 average score -114.75 epsilon 0.01 bin count 141
+epoch  93 score -106.00 average score -114.66 epsilon 0.01 bin count 106
+epoch  94 score -83.00 average score -114.33 epsilon 0.01 bin count 83
+--- saving checkpoint ---
+epoch  95 score -96.00 average score -114.14 epsilon 0.01 bin count 96
+epoch  96 score -96.00 average score -113.95 epsilon 0.01 bin count 96
+epoch  97 score -98.00 average score -113.79 epsilon 0.01 bin count 98
+epoch  98 score -76.00 average score -113.40 epsilon 0.01 bin count 76
+[0.63 0.33 0.81 0.77 0.6  0.52 0.48 0.03 0.16 0.15 0.65 0.09 0.65 0.96
+ 0.32 0.64 0.35 0.45 0.73 0.27 0.39 0.82 0.43 0.06 0.54 0.31 0.47 0.81
+ 0.3  0.04 0.94 0.63 0.89 0.09 0.12 0.71 0.58 0.26 0.4  0.36 0.52 0.92
+ 0.42 0.47 0.36 0.28 0.72 0.15 0.85 0.38 0.47 0.91 0.89 0.42 0.83 0.15
+ 0.63 0.28 0.31 0.53 0.49 0.37 0.71 0.26 0.71 0.69 0.74 0.59 0.66 0.04
+ 0.54 0.36 0.99 0.09 0.96 0.94 0.29 0.34 0.36 0.6  0.46 0.79 0.08 0.31
+ 0.66 0.59 0.85 0.67 0.48 0.52 0.52 0.95 0.42 0.75 0.34 0.06 0.43 0.52
+ 0.16 0.95]
+epoch  99 score -71.00 average score -112.98 epsilon 0.01 bin count 71
+Next fit:     73
+First fit:    55
+Best fit:     52
+Learned fit:  71

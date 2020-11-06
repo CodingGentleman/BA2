@@ -1,3 +1,4 @@
+import os.path
 import numpy as np
 from classic_algorithms import FirstFit
 from classic_algorithms import NextFit
@@ -9,11 +10,15 @@ from utils import plot_learning
 from utils import read_csv
 
 max_simultaneously_bins = 5
-data = read_csv(file="training_data/small_double_gauss.csv")
+load_checkpoint = True
+filename = "flat"
+data = read_csv(file="training_data/%s.csv" % filename)
 print(data)
 
 agent = Agent(gamma=0.99, epsilon=1.0, batch_size=64, n_actions=4, eps_end=0.01, input_dims=[2], lr=0.001)
 agent.train()
+if load_checkpoint and os.path.isfile("%s_checkpoint.pth.tar" % filename):
+    agent.load_checkpoint(source_file="%s_checkpoint.pth.tar" % filename)
 
 item_provider = ItemProvider(sample_size=100, data=data, randomize=True)
 env = BinEnvironment(max_simultaneously_bins, item_provider=item_provider)
@@ -24,7 +29,9 @@ n_games = 100
 for i in range(n_games):
     score = 0
     done = False
-    if(i == n_games-1):
+    if i % 5 == 0:
+        agent.save_checkpoint(target_file="%s_checkpoint.pth.tar" % filename)
+    if i == n_games-1:
         data = np.random.choice(data, size=100, replace=False)
         print(data)
         item_provider = ItemProvider(sample_size=100, data=data, randomize=True)
@@ -60,5 +67,5 @@ print('Best fit:    ', best_fit.get_bin_count())
 print('Learned fit: ', env.bin_count)
 
 x = [i+1 for i in range(n_games)]
-plot_learning(x, scores, eps_history, 'plot.png')
+plot_learning(x, scores, eps_history, "%s_plot.png" % filename)
 

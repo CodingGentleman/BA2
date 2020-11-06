@@ -2,7 +2,7 @@ import numpy as np
 from decimal import Decimal
 
 class ItemProvider():
-    def __init__(self, sample_size=10, data=[np.float32('0.1'), np.float32('0.2'), np.float32('0.3'), np.float32('0.4'), np.float32('0.5'), np.float32('0.6'), np.float32('0.7'), np.float32('0.8'), np.float32('0.9')], randomize=False):
+    def __init__(self, sample_size=10, data=[np.float32('0.1'), np.float32('0.3'), np.float32('0.5'), np.float32('0.7'), np.float32('0.9')], randomize=False):
         self.sample_size = sample_size
         self.counter = sample_size
         self.randomize = randomize

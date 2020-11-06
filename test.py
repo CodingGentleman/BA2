@@ -1,4 +1,4 @@
-from BinEnvironment import BinEnvironment
+from environment import BinEnvironment
 import csv
 import numpy as np
 import matplotlib.pyplot as plt
@@ -29,21 +29,22 @@ def test_csv():
     results = results.astype(np.float32)
     return results
 
-def generate_testdata():
-    standard_defiation = 5
+def gen_trainingsdata():
+    standard_defiation = 10000
+    trainingdata_size = 10000
     x = get_truncated_normal(mean=50, standard_defiation=standard_defiation, lower_limit=1, upper_limit=99)
-    data = (x.rvs(100)/100).round(decimals=2)
+    data = (x.rvs(trainingdata_size)/100).round(decimals=2)
     # x2 = get_truncated_normal(mean=75, standard_defiation=standard_defiation, lower_limit=50, upper_limit=99)
     # data2 = (x2.rvs(5000)/100).round(decimals=2)
     # data = np.hstack([data,data2]).transpose()
-    np.savetxt("training_data/micro_gauss.csv", data, delimiter=",", fmt='%.2f', newline=",")
+    np.savetxt("training_data/flat.csv", data, delimiter=",", fmt='%.2f', newline=",")
     plt.hist(data, bins=10)
     plt.ylabel("Anzahl")
     plt.xlabel("Wert")
-    plt.savefig("training_data/micro_gauss.png")
+    plt.savefig("training_data/flat.png")
 
 def get_truncated_normal(mean=0, standard_defiation=1, lower_limit=0, upper_limit=10):
     return truncnorm((lower_limit - mean) / standard_defiation, (upper_limit - mean) / standard_defiation, loc=mean, scale=standard_defiation)
 
 if __name__ == "__main__":
-    play()
+    gen_trainingsdata()

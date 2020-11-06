@@ -30,6 +30,17 @@ class Agent():
     def eval(self):
         self.Q.eval()
 
+    def save_checkpoint(self, target_file="checkpoint.pth.tar"):
+        print('--- saving checkpoint ---')
+        checkpoint = {'state_dict' : self.Q.state_dict(), 'optimizer' : self.Q.optimizer.state_dict()}
+        T.save(checkpoint, target_file)
+
+    def load_checkpoint(self, source_file="checkpoint.pth.tar"):
+        print('--- loading checkpoint ---')
+        checkpoint = T.load(source_file)
+        self.Q.load_state_dict(checkpoint['state_dict'])
+        self.Q.optimizer.load_state_dict(checkpoint['optimizer'])
+
     def store_transition(self, state, action, reward, state_, terminal):
         index = self.mem_cntr % self.mem_size
         self.state_memory[index] = state
